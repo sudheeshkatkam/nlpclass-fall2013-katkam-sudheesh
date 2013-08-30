@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="nlpclass-instructor"
+		module="nlpclass-instructor$sources_javadoc_2.10"
+		revision="0.0.1"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
+		date="20130830171718"/>
+	<dependencies>
+		<module organisation="com.utcompling" name="nlpclass-fall2013_2.10">
+			<revision name="0001" status="release" pubdate="20130816121541" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="3225" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.utcompling/nlpclass-fall2013_2.10/ivy-0001.xml" searched="false" origin-is-local="false" origin-location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/com/utcompling/nlpclass-fall2013_2.10/0001/nlpclass-fall2013_2.10-0001.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="0001" rev-constraint-default="0001" rev-constraint-dynamic="0001" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="nlpclass-fall2013_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5311966" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.utcompling/nlpclass-fall2013_2.10/srcs/nlpclass-fall2013_2.10-0001-sources.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/com/utcompling/nlpclass-fall2013_2.10/0001/nlpclass-fall2013_2.10-0001-sources.jar"/>
+					</artifact>
+					<artifact name="nlpclass-fall2013_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="361535" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.utcompling/nlpclass-fall2013_2.10/docs/nlpclass-fall2013_2.10-0001-javadoc.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/com/utcompling/nlpclass-fall2013_2.10/0001/nlpclass-fall2013_2.10-0001-javadoc.jar"/>
+					</artifact>
+					<artifact name="nlpclass-fall2013_2.10" type="jar" ext="jar" status="no" details="" size="5322978" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.utcompling/nlpclass-fall2013_2.10/jars/nlpclass-fall2013_2.10-0001.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/com/utcompling/nlpclass-fall2013_2.10/0001/nlpclass-fall2013_2.10-0001.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.stanford.nlp" name="stanford-corenlp">
+			<revision name="3.2.0" status="release" pubdate="20130708211707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nlp.stanford.edu/software/corenlp.shtml" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">
+				<license name="GNU General Public License Version 2" url="http://www.gnu.org/licenses/gpl-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3758" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/ivy-3.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.2.0/stanford-corenlp-3.2.0.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="3.2.0" rev-constraint-default="3.2.0" rev-constraint-dynamic="3.2.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="stanford-corenlp" type="jar" ext="jar" status="no" details="" size="4694941" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.2.0/stanford-corenlp-3.2.0.jar"/>
+					</artifact>
+					<artifact name="stanford-corenlp" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="5735964" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/docs/stanford-corenlp-3.2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.2.0/stanford-corenlp-3.2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="stanford-corenlp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2879496" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/srcs/stanford-corenlp-3.2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.2.0/stanford-corenlp-3.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.efficient-java-matrix-library" name="ejml">
+			<revision name="0.19" status="release" pubdate="20120507053754" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/efficient-java-matrix-library/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="21">
+				<license name="LGPL" url="http://www.gnu.org/copyleft/lesser.html"/>
+				<metadata-artifact status="no" details="" size="3174" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.19.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.19/ejml-0.19.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="0.19" rev-constraint-default="0.19" rev-constraint-dynamic="0.19" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="ejml" type="jar" ext="jar" status="no" details="" size="303423" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/jars/ejml-0.19.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.19/ejml-0.19.jar"/>
+					</artifact>
+					<artifact name="ejml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="315274" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/srcs/ejml-0.19-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.19/ejml-0.19-sources.jar"/>
+					</artifact>
+					<artifact name="ejml" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1088732" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/docs/ejml-0.19-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.19/ejml-0.19-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="de.jollyday" name="jollyday">
+			<revision name="0.4.7" status="release" pubdate="20121104180012" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jollyday" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4099" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="0.4.7" rev-constraint-default="0.4.7" rev-constraint-dynamic="0.4.7" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="jollyday" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="186534" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/de.jollyday/jollyday/srcs/jollyday-0.4.7-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-sources.jar"/>
+					</artifact>
+					<artifact name="jollyday" type="jar" ext="jar" status="no" details="" size="200993" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/de.jollyday/jollyday/jars/jollyday-0.4.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.jar"/>
+					</artifact>
+					<artifact name="jollyday" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="392821" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/de.jollyday/jollyday/docs/jollyday-0.4.7-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.7" status="release" pubdate="20120524043721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="20">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3149" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.2.7" rev-constraint-default="2.2.7" rev-constraint-dynamic="2.2.7" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="420071" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/javax.xml.bind/jaxb-api/docs/jaxb-api-2.2.7-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-javadoc.jar"/>
+					</artifact>
+					<artifact name="jaxb-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="244681" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/javax.xml.bind/jaxb-api/srcs/jaxb-api-2.2.7-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-sources.jar"/>
+					</artifact>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="100146" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.1" status="release" pubdate="20120222102242" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-time.sourceforge.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3297" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/joda-time/joda-time/ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.1/joda-time-2.1.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1312149" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.1/joda-time-2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="700266" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.1/joda-time-2.1-sources.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="570478" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.1/joda-time-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xom" name="xom">
+			<revision name="1.2.5" status="release" pubdate="20100512012210" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xom.nu" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<license name="The GNU Lesser General Public License, Version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="2786" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xom/xom/ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xom/xom/1.2.5/xom-1.2.5.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="xom" type="jar" ext="jar" status="no" details="" size="308863" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xom/xom/jars/xom-1.2.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xom/xom/1.2.5/xom-1.2.5.jar"/>
+					</artifact>
+					<artifact name="xom" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="301937" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xom/xom/srcs/xom-1.2.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xom/xom/1.2.5/xom-1.2.5-sources.jar"/>
+					</artifact>
+					<artifact name="xom" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="459872" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xom/xom/docs/xom-1.2.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xom/xom/1.2.5/xom-1.2.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="xalan">
+			<revision name="2.7.0" status="release" pubdate="20051108160738" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="17">
+				<metadata-artifact status="no" details="" size="2448" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xalan/xalan/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3137807" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0-sources.jar"/>
+					</artifact>
+					<artifact name="xalan" type="jar" ext="jar" status="no" details="" size="2730442" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xalan/xalan/jars/xalan-2.7.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.8.0" status="release" pubdate="20060512153229" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xerces.apache.org/xerces2-j" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="16">
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xerces/xercesImpl/ivy-2.8.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1875691" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.8.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0-sources.jar"/>
+					</artifact>
+					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1207073" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.8.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="dhg" name="scala-util_2.10">
+			<revision name="1.0.0-SNAPSHOT" status="integration" pubdate="20130815033504" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<metadata-artifact status="no" details="" size="3217" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/dhg/scala-util_2.10/ivy-1.0.0-SNAPSHOT.xml" searched="true" origin-is-local="false" origin-location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/dhg/scala-util_2.10/1.0.0-SNAPSHOT/scala-util_2.10-1.0.0-SNAPSHOT.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.0.0-SNAPSHOT" rev-constraint-default="1.0.0-SNAPSHOT" rev-constraint-dynamic="1.0.0-SNAPSHOT" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scala-util_2.10" type="jar" ext="jar" status="no" details="" size="547467" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/dhg/scala-util_2.10/jars/scala-util_2.10-1.0.0-SNAPSHOT.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/dhg/scala-util_2.10/1.0.0-SNAPSHOT/scala-util_2.10-1.0.0-SNAPSHOT.jar"/>
+					</artifact>
+					<artifact name="scala-util_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24086" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/dhg/scala-util_2.10/srcs/scala-util_2.10-1.0.0-SNAPSHOT-sources.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/dhg/scala-util_2.10/1.0.0-SNAPSHOT/scala-util_2.10-1.0.0-SNAPSHOT-sources.jar"/>
+					</artifact>
+					<artifact name="scala-util_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="777514" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/dhg/scala-util_2.10/docs/scala-util_2.10-1.0.0-SNAPSHOT-javadoc.jar">
+						<origin-location is-local="false" location="http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/dhg/scala-util_2.10/1.0.0-SNAPSHOT/scala-util_2.10-1.0.0-SNAPSHOT-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.10" status="release" pubdate="20110929141223" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2765" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/junit/junit/ivy-4.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="4.10" rev-constraint-default="4.10" rev-constraint-dynamic="4.10" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="junit" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="141185" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/junit/junit/srcs/junit-4.10-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10-sources.jar"/>
+					</artifact>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="253160" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/junit/junit/jars/junit-4.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar"/>
+					</artifact>
+					<artifact name="junit" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="424758" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/junit/junit/docs/junit-4.10-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hamcrest" name="hamcrest-core">
+			<revision name="1.1" status="release" pubdate="20070718141143" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<metadata-artifact status="no" details="" size="4321" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="hamcrest-core" type="jar" ext="jar" status="no" details="" size="76643" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar"/>
+					</artifact>
+					<artifact name="hamcrest-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="327" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.hamcrest/hamcrest-core/srcs/hamcrest-core-1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-core">
+			<revision name="2.0-beta3" status="release" pubdate="20121111102352" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+				<metadata-artifact status="no" details="" size="9677" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-core/ivy-2.0-beta3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta3/log4j-core-2.0-beta3.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.0-beta3" rev-constraint-default="2.0-beta3" rev-constraint-dynamic="2.0-beta3" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="log4j-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="351311" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-core/srcs/log4j-core-2.0-beta3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta3/log4j-core-2.0-beta3-sources.jar"/>
+					</artifact>
+					<artifact name="log4j-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1344518" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-core/docs/log4j-core-2.0-beta3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta3/log4j-core-2.0-beta3-javadoc.jar"/>
+					</artifact>
+					<artifact name="log4j-core" type="jar" ext="jar" status="no" details="" size="407503" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-core/jars/log4j-core-2.0-beta3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta3/log4j-core-2.0-beta3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="scalalogging-log4j_2.10">
+			<revision name="1.0.1" status="release" pubdate="20121223164342" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/scalalogging" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2716" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scalalogging-log4j_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="364726" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/docs/scalalogging-log4j_2.10-1.0.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalalogging-log4j_2.10" type="jar" ext="jar" status="no" details="" size="157049" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/jars/scalalogging-log4j_2.10-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1.jar"/>
+					</artifact>
+					<artifact name="scalalogging-log4j_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4647" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/srcs/scalalogging-log4j_2.10-1.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api">
+			<revision name="2.0-beta3" status="release" pubdate="20121111102219" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="10">
+				<metadata-artifact status="no" details="" size="8135" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-api/ivy-2.0-beta3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta3/log4j-api-2.0-beta3.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.0-beta3" rev-constraint-default="2.0-beta3" rev-constraint-dynamic="2.0-beta3" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="log4j-api" type="jar" ext="jar" status="no" details="" size="83649" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.0-beta3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta3/log4j-api-2.0-beta3.jar"/>
+					</artifact>
+					<artifact name="log4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="303613" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-api/docs/log4j-api-2.0-beta3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta3/log4j-api-2.0-beta3-javadoc.jar"/>
+					</artifact>
+					<artifact name="log4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74630" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-api/srcs/log4j-api-2.0-beta3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta3/log4j-api-2.0-beta3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.0" status="release" pubdate="20121220012932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="9">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2552" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3149351" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="418349" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33515231" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jfree" name="jfreechart">
+			<revision name="1.0.14" status="release" pubdate="20111121013516" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jfree.org/jfreechart/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="4115" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jfreechart/ivy-1.0.14.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.0.14" rev-constraint-default="1.0.14" rev-constraint-dynamic="1.0.14" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="jfreechart" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1898607" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jfreechart/srcs/jfreechart-1.0.14-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14-sources.jar"/>
+					</artifact>
+					<artifact name="jfreechart" type="jar" ext="jar" status="no" details="" size="1461633" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jfreechart/jars/jfreechart-1.0.14.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14.jar"/>
+					</artifact>
+					<artifact name="jfreechart" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4945298" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jfreechart/docs/jfreechart-1.0.14-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jfreechart/1.0.14/jfreechart-1.0.14-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lowagie" name="itext">
+			<revision name="2.1.5" status="release" pubdate="20090420165248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.lowagie.com/iText/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Mozilla Public License" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.lowagie/itext/ivy-2.1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.1.5" rev-constraint-default="2.1.5" rev-constraint-dynamic="2.1.5" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="itext" type="jar" ext="jar" status="no" details="" size="1117661" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5.jar"/>
+					</artifact>
+					<artifact name="itext" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2022371" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.lowagie/itext/srcs/itext-2.1.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5-sources.jar"/>
+					</artifact>
+					<artifact name="itext" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3890130" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/com.lowagie/itext/docs/itext-2.1.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/lowagie/itext/2.1.5/itext-2.1.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.3.04" status="release" pubdate="20061222073752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="6">
+				<metadata-artifact status="no" details="" size="2819" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xml-apis/xml-apis/ivy-1.3.04.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.3.04" rev-constraint-default="1.3.04" rev-constraint-dynamic="1.3.04" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="194354" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.3.04.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar"/>
+					</artifact>
+					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="527816" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.3.04-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jfree" name="jcommon">
+			<revision name="1.0.17" status="release" pubdate="20111017072602" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jfree.org/jcommon/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<license name="GNU Lesser General Public Licence" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="3477" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jcommon/ivy-1.0.17.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="1.0.17" rev-constraint-default="1.0.17" rev-constraint-dynamic="1.0.17" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="jcommon" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="2209476" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jcommon/docs/jcommon-1.0.17-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17-javadoc.jar"/>
+					</artifact>
+					<artifact name="jcommon" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="747242" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jcommon/srcs/jcommon-1.0.17-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17-sources.jar"/>
+					</artifact>
+					<artifact name="jcommon" type="jar" ext="jar" status="no" details="" size="506386" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jcommon/jars/jcommon-1.0.17.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/jfree/jcommon/1.0.17/jcommon-1.0.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.10">
+			<revision name="7.0.3" status="release" pubdate="20130812130925" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2514" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.0.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.3/scalaz-core_2.10-7.0.3.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="7.0.3" rev-constraint-default="7.0.3" rev-constraint-dynamic="7.0.3" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4939336" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scalaz/scalaz-core_2.10/docs/scalaz-core_2.10-7.0.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.3/scalaz-core_2.10-7.0.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalaz-core_2.10" type="jar" ext="jar" status="no" details="" size="8988600" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scalaz/scalaz-core_2.10/jars/scalaz-core_2.10-7.0.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.3/scalaz-core_2.10-7.0.3.jar"/>
+					</artifact>
+					<artifact name="scalaz-core_2.10" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="270237" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scalaz/scalaz-core_2.10/srcs/scalaz-core_2.10-7.0.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.3/scalaz-core_2.10-7.0.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.2" status="release" pubdate="20130606130543" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.pom"/>
+				<caller organisation="nlpclass-instructor" name="nlpclass-instructor$sources_javadoc_2.10" conf="optional, compile, runtime, runtime-internal" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1058962" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="33909258" time="0" location="/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

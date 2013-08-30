@@ -1,0 +1,34 @@
+[0m[[0minfo[0m] [0mRunning mypkg.First [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.sbt/boot/scala-2.10.2/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/com.utcompling/nlpclass-fall2013_2.10/jars/nlpclass-fall2013_2.10-0001.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/dhg/scala-util_2.10/jars/scala-util_2.10-1.0.0-SNAPSHOT.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.3.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jfreechart/jars/jfreechart-1.0.14.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.jfree/jcommon/jars/jcommon-1.0.17.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.3.04.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/com.lowagie/itext/jars/itext-2.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/bouncycastle/bcmail-jdk14/jars/bcmail-jdk14-138.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/bouncycastle/bcprov-jdk14/jars/bcprov-jdk14-138.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/jars/scalalogging-log4j_2.10-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.0-beta3.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.apache.logging.log4j/log4j-core/jars/log4j-core-2.0-beta3.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/junit/junit/jars/junit-4.10.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/xom/xom/jars/xom-1.2.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.8.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/xalan/xalan/jars/xalan-2.7.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/de.jollyday/jollyday/jars/jollyday-0.4.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.7.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/sudheeshkatkam/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/jars/ejml-0.19.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
