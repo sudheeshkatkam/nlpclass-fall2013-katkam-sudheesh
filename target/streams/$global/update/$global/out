@@ -1,20 +1,20 @@
 [0m[[0minfo[0m] [0mUpdating {file:/Users/sudheeshkatkam/Desktop/coursework/CS%20378/nlp/}default-2f9d55...[0m
-[0m[[0mdebug[0m] [0m:: resolving dependencies :: nlpclass-instructor#nlpclass-instructor_2.10;0.0.1[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.2 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.utcompling#nlpclass-fall2013_2.10;0001 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.utcompling#nlpclass-fall2013_2.10;0001 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdon't use cache for com.utcompling#nlpclass-fall2013_2.10;0001: changing=true[0m
@@ -31,8 +31,8 @@
 [0m[[0mdebug[0m] [0m		=> http://www.cs.utexas.edu/~dhg/maven-repository/snapshots/com/utcompling/nlpclass-fall2013_2.10/0001/nlpclass-fall2013_2.10-0001.pom (0001)[0m
 [0m[[0mdebug[0m] [0m	default-cache: revision in cache (not updated): com.utcompling#nlpclass-fall2013_2.10;0001[0m
 [0m[[0mdebug[0m] [0m	found com.utcompling#nlpclass-fall2013_2.10;0001 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -325,25 +325,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -493,26 +493,26 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -666,27 +666,27 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->default][0m
 [0m[[0minfo[0m] [0mResolving com.novocode#junit-interface;0.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.novocode#junit-interface;0.8 {test=[default]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.novocode#junit-interface;0.8[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.novocode#junit-interface;0.8[0m
 [0m[[0mdebug[0m] [0m	found com.novocode#junit-interface;0.8 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.8.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.10 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.8.2 [compile->compile(*)][0m
@@ -703,21 +703,21 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->org.scala-tools.testing#test-interface;0.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->org.scala-tools.testing#test-interface;0.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -867,28 +867,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [runtime-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -1038,28 +1038,28 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [test-internal][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [test][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->dhg#scala-util_2.10;1.0.0-SNAPSHOT [compile->master(*)][0m
@@ -1209,22 +1209,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->com.typesafe#scalalogging-log4j_2.10;1.0.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.utcompling#nlpclass-fall2013_2.10;0001->org.apache.logging.log4j#log4j-core;2.0-beta3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->junit#junit;4.10 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->default][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.utcompling#nlpclass-fall2013_2.10;0001 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.typesafe#scalalogging-log4j_2.10;1.0.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->org.apache.logging.log4j#log4j-core;2.0-beta3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->junit#junit;4.10 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.8.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.10 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.8.2 [compile->compile(*)][0m
@@ -1236,18 +1236,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->junit#junit;4.10 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->org.scala-tools.testing#test-interface;0.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.8->org.scala-tools.testing#test-interface;0.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-instructor#nlpclass-instructor_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [optional][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1->com.novocode#junit-interface;0.8 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [plugin][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [sources][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [sources][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [docs][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 [pom][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/nlpclass-instructor/nlpclass-instructor_2.10/0.0.1/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 [pom][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/nlpclass-sudheesh-katkam/nlpclass-sudheesh-katkam_2.10/0.0.1/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.utcompling#nlpclass-fall2013_2.10;0001!nlpclass-fall2013_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#scalalogging-log4j_2.10;1.0.1!scalalogging-log4j_2.10.jar[0m
@@ -1274,18 +1274,18 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.2.7!jaxb-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.8!junit-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 535ms :: artifacts dl 25ms[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 compile produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 runtime produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 test produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 provided produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 optional produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 compile-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 runtime-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 test-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 plugin produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 sources produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 docs produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for nlpclass-instructor#nlpclass-instructor_2.10;0.0.1 pom produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-instructor-nlpclass-instructor_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (535ms resolve - 25ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1699ms :: artifacts dl 25ms[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 compile produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 runtime produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 test produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 provided produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 optional produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 compile-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 runtime-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 test-internal produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 plugin produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 sources produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 docs produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for nlpclass-sudheesh-katkam#nlpclass-sudheesh-katkam_2.10;0.0.1 pom produced in /Users/sudheeshkatkam/Desktop/coursework/CS 378/nlp/target/resolution-cache/reports/nlpclass-sudheesh-katkam-nlpclass-sudheesh-katkam_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1699ms resolve - 25ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

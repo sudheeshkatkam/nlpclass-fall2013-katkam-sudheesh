@@ -1,6 +1,6 @@
 import com.typesafe.sbt.SbtStartScript
 
-name := "nlpclass-instructor"
+name := "nlpclass-sudheesh-katkam"
 
 version := "0.0.1"
 
