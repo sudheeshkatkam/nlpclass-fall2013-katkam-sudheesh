@@ -9,15 +9,17 @@ object CountFeatures {
     // Map[String, Map [String, Map [String, Int]]]
     //     feature      label        value   count
     val lines =  Source.fromFile(args(0)).getLines.toVector
-    println (lines.map(handle).groupBy(x => x._1).mapValues(x => x))
+    lines.map(handle).groupBy(x => x._1).mapValues(x => x.size).foreach{x => println(x._1 + " " + x._2)}
+    println()
+    lines.map(handle).groupBy(x => x._2).foreach{x => println("key: " + x._1 + "\nvalue: " + x._2)}
   }
   
-  def handle(line: String): Tuple2[String, Vector[Tuple2[String,String]]] = {
+  def handle(line: String): Tuple2[String, Map[String,String]] = {
     // A=B, C=D, .. L1 
-    // [ (L1, [(A, B), (C, D), ...]) ...]
+    // [ Tuple(L1, Map[(A, B), (C, D), ...]) ...]
     val fields = line.split(",").toVector
     val label = fields.last
-    val rest = fields.dropRight(1).map(x => x.split("=")).map(x => (x(0), x(1)))
+    val rest = fields.dropRight(1).map(x => x.split("=")).map(x => (x(0), x(1))).toMap
     (label, rest)
   }
 }
