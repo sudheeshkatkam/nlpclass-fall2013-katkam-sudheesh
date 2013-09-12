@@ -29,7 +29,7 @@ object CountFeatures {
 
     val map_label_featurevaluepair = Source.fromFile(args(0)).getLines.toVector.map(
         handle1).groupBy(x => x._1)
-    map_label_featurevaluepair.mapValues(x => x.size).foreach{x => println(x._1 + " " + x._2)}
+    map_label_featurevaluepair.mapValues(x => x.size).toVector.sorted.foreach{x => println(x._1 + " " + x._2)}
     val vector_feature_labelvaluepairs = map_label_featurevaluepair.unzip._2.map(
         x => x.map{ case(a,b) => b.map{
           case(k,v) => (k,(a,v))}}.flatten).flatten.toVector
