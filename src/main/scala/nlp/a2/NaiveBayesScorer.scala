@@ -17,10 +17,7 @@ object NaiveBayesScorer extends NaiveBayesScorerToImplement{
     val accuracy = (predictions.count(x => x._1 == x._2).doubleValue/predictions.size)*100
     println(f"accuracy = ${accuracy}%.2f")
     val tp = predictions.groupBy(_._2)(positiveLabel).count(x => x._1 == x._2)
-    //val fp = predictions.groupBy(_._2)(positiveLabel).count(x => x._1 != x._2)
-    val fp = predictions.groupBy(_._2).foldLeft(0){ (acc, groupedByPred) => 
-      if(groupedByPred._1 != positiveLabel) acc + groupedByPred._2.size else acc + 0
-    }
+    val fp = predictions.groupBy(_._2)(positiveLabel).count(x => x._1 != x._2)
     val fn = predictions.groupBy(_._1)(positiveLabel).count(x => x._1 != x._2)
     val precision = (tp.doubleValue/(tp+fp))*100
     val recall = (tp.doubleValue/(tp+fn))*100
@@ -31,3 +28,8 @@ object NaiveBayesScorer extends NaiveBayesScorerToImplement{
   }
 
 }
+
+//val fp = predictions.groupBy(_._2).foldLeft(0){ (acc, groupedByPred) => 
+//  if(groupedByPred._1 != positiveLabel) acc + groupedByPred._2.size else acc + 0
+//}
+    

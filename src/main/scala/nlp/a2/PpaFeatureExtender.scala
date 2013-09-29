@@ -7,13 +7,13 @@ import nlpclass.Lemmatize
 class PpaFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value]{
   
   def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    val feature_extender = new CompositeFeatureExtender[Feature, Value](Vector(
-    new NumberFeatureExtender(),
-    new LemmaFeatureExtender(),
-    new WordShapeFeatureExtender(),
-    new VNCombinationFeatureExtender(),
-    new CapitalizationFeatureExtender()))
-    feature_extender.extendFeatures(features)
+    new CompositeFeatureExtender[Feature, Value](Vector(
+      new NumberFeatureExtender(),
+      new LemmaFeatureExtender(),
+      new WordShapeFeatureExtender(),
+      new VNCombinationFeatureExtender(),
+      new CapitalizationFeatureExtender()))
+    .extendFeatures(features)
   }
   
 }

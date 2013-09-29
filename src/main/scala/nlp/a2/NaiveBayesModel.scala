@@ -24,7 +24,13 @@ class NaiveBayesModel[Label, Feature, Value](
       else 
         "All posteriors are zero!"
     )
-    
+    logger.debug(
+      labels.map{ label => 
+        val pl = pLabel(label) 
+        val prod = features.foldLeft(1.0) { (acc, fv) => 
+        acc * pValue(fv._1)(fv._2, label) } 
+        f"label: ${label} pLabel: ${pl}%.4f prod: ${prod}%.4f"}.mkString("\n")
+    )
     labelsSortedByProb(0)._1
   }
   

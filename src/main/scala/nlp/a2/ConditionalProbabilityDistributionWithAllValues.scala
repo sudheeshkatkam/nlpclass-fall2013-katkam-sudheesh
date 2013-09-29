@@ -25,8 +25,8 @@ class ConditionalProbabilityDistributionWithAllValues[A, B]
 	    val fSum = frequencySumDistribution.getOrElse(given, 0)
 	    val freq = fDist.getOrElse(x, 0)
 	    logger.debug("P(" + x + " | " + given + "):" + 
-	        " num: " + (freq + lambda) + 
-	        " den: " + fSum + " + " + (allValues.size * lambda))
+	        " numer: " + (freq + lambda) + 
+	        " denom: " + fSum + " + " + (allValues.size * lambda))
 	    (freq + lambda).toDouble/(fSum + (allValues.size * lambda))
 	  }
 	  

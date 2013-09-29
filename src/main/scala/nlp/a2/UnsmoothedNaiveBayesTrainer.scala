@@ -11,7 +11,7 @@ class UnsmoothedNaiveBayesTrainer[Label, Feature, Value]
   def train(instances: Vector[(Label, Vector[(Feature, Value)])]): 
     NaiveBayesModelToImplement[Label, Feature, Value] = {
     val labels = instances.map{_._1}.toSet
-    val pLabel = new ProbabilityDistribution[Label](labels.toVector)
+    val pLabel = new ProbabilityDistribution[Label](instances.map{_._1}.toVector)
     //println(lfv_to_flv(instances))
     val pValue = lfvToFlv(instances).map { case (f, lv) => 
       (f, new ConditionalProbabilityDistribution[Label, Value](lv)) }

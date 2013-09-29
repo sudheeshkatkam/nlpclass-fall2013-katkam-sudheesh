@@ -11,7 +11,7 @@ class AddLambdaNaiveBayesTrainer[Label, Feature, Value]  (lambda: Double)
   
   def train(instances: Vector[(Label, Vector[(Feature, Value)])]): NaiveBayesModelToImplement[Label, Feature, Value] = {
     val labels = instances.map{_._1}.toSet
-    val pLabel = new ProbabilityDistribution[Label](labels.toVector)
+    val pLabel = new ProbabilityDistribution[Label](instances.map{_._1}.toVector)
     //println(lfv_to_flv(instances))
     val flv = lfvToFlv(instances)
     val fv = lfvToFv(instances)
