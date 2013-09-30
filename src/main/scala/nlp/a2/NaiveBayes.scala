@@ -4,8 +4,10 @@ import dhg.util.FileUtil._
 import dhg.util.CollectionUtil._
 import nlpclass.NaiveBayesTrainerToImplement
 import nlpclass.NoOpFeatureExtender
+import nlpclass.FeatureExtender
 
 object InvalidPosLabel extends Exception { }
+
 object MissingInstances extends Exception { }
 
 object NaiveBayes {
@@ -58,12 +60,31 @@ object NaiveBayes {
   }
   
   def trainer(lambda: Double, log: Boolean, extend: Boolean): NaiveBayesTrainerToImplement[String, String, String] = {
-    if(lambda > 0 && log)
-      return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda)    
-    else if (lambda > 0)
-      return new AddLambdaNaiveBayesTrainer[String, String, String](lambda)
-    else
-      return new UnsmoothedNaiveBayesTrainer[String, String, String]
+    if(lambda > 0){
+      if(log){
+        if(extend)
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender[String, String])
+        else
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda, new NoOpFeatureExtender)
+      }else{
+        if(extend)
+          return new AddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender[String, String])
+        else
+          return new AddLambdaNaiveBayesTrainer[String, String, String](lambda, new NoOpFeatureExtender)
+      }
+    }else {
+      if(log){
+        if(extend)
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](0.0, new PpaFeatureExtender[String, String])
+        else
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](0.0, new NoOpFeatureExtender)
+      }else{
+        if(extend)
+          return new UnsmoothedNaiveBayesTrainer[String, String, String](new PpaFeatureExtender[String, String])
+        else
+          return new UnsmoothedNaiveBayesTrainer[String, String, String](new NoOpFeatureExtender)
+      }
+    }
   }
   
 }

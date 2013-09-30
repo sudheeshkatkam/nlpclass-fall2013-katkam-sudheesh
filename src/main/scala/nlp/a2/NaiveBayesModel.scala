@@ -4,16 +4,18 @@ import nlpclass.ProbabilityDistributionToImplement
 import nlpclass.ConditionalProbabilityDistributionToImplement
 import com.typesafe.scalalogging.log4j.Logging
 import nlpclass.NaiveBayesModelToImplement
+import nlpclass.FeatureExtender
 
 class NaiveBayesModel[Label, Feature, Value](
   labels: Set[Label],
   pLabel: ProbabilityDistributionToImplement[Label],
-  pValue: Map[Feature, ConditionalProbabilityDistributionToImplement[Label, Value]])
+  pValue: Map[Feature, ConditionalProbabilityDistributionToImplement[Label, Value]],
+  fe : FeatureExtender[Feature, Value])
   extends NaiveBayesModelToImplement[Label, Feature, Value] with Logging {
   
   def predict(features: Vector[(Feature, Value)]): Label = {
     val labelsSortedByProb = labels.map{ label => 
-      label -> pLabel(label) * features.foldLeft(1.0) { (acc, fv) => 
+      label -> pLabel(label) * fe(features).foldLeft(1.0) { (acc, fv) => 
         acc * pValue(fv._1)(fv._2, label)}
     }.toVector.sortBy(-_._2)
     
