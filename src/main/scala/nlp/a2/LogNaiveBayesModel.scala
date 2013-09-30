@@ -11,16 +11,21 @@ class LogNaiveBayesModel[Label, Feature, Value](
   pLabel: ProbabilityDistributionToImplement[Label],
   pValue: Map[Feature, ConditionalProbabilityDistributionToImplement[Label, Value]],
   fe: FeatureExtender[Feature, Value]) extends NaiveBayesModelToImplement[Label, Feature, Value] {
-  
+
   def predict(features: Vector[(Feature, Value)]): Label = {
-    val prob_map = labels.map{ x => 
-      x -> (math.log(pLabel(x)) + fe(features).foldLeft(0.0) { (acc, z) => 
-        acc + math.log(pValue(z._1)(z._2, x)) })
+    val labelsMap = labels.map {
+      x =>
+        x -> (math.log(pLabel(x)) + fe(features).foldLeft(0.0) {
+          (acc, z) =>
+            acc + math.log(pValue(z._1)(z._2, x))
+        })
     }.toMap
-    val max_prob = prob_map.values.max
-    val predictions = prob_map.map{ case(label, prob) => 
-      label -> (math.exp(prob) - max_prob)}
+    val maximum = labelsMap.values.max
+    val predictions = labelsMap.map {
+      case (label, prob) =>
+        label -> (math.exp(prob) - maximum)
+    }
     predictions.maxBy(_._2)._1
   }
-  
+
 }
