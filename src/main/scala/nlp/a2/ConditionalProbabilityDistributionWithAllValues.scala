@@ -25,6 +25,13 @@ class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2
       }
   }
 
+  val distribution = pairs.map(_._1).to[Set].map { first =>
+    first -> frequencyDistribution(first).map {
+      case (second, frequency) =>
+        second -> frequency.toDouble / frequencySumDistribution(first)
+    }
+  }.toMap
+
   def apply(x: B, given: A): Double = {
     val fDist = frequencyDistribution.getOrElse(given, scala.collection.immutable.Map.empty)
     val fSum = frequencySumDistribution.getOrElse(given, 0)
@@ -37,30 +44,15 @@ class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2
 
   def sample(given: A): B = {
     try {
-      val distribution = pairs.map {
-        case (first, _) =>
-          first -> frequencyDistribution(first).map {
-            case (second, frequency) =>
-              second -> frequency.toDouble / frequencySumDistribution(first)
-          }
-      }.toMap
       val dist = distribution.getOrElse(given, scala.collection.immutable.Map.empty)
       if (dist == scala.collection.immutable.Map.empty) { throw InvalidGiven }
       val sorted_keys = dist.keys.toVector.sortBy(-dist(_))
       val num = Random.nextDouble
-      sorted_keys.foldLeft(0.0) {
-        (acc, key) =>
-          if (acc + dist(key) > num)
-            return key
-          acc + dist(key)
+      var sum = 0.0
+      sorted_keys.foreach { x =>
+        sum += dist(x)
+        if (sum > num) { return x }
       }
-
-      /* var sum = 0.0
-		    sorted_keys.foreach{ x =>
-		      sum += dist(x)
-		      if (sum > num) { return x }
-		    }
-		    */
     } catch {
       case InvalidGiven => println(given + " is unknown.")
     }

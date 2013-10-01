@@ -4,68 +4,97 @@ import nlpclass.FeatureExtender
 import nlpclass.CompositeFeatureExtender
 import nlpclass.Lemmatize
 
-class PpaFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class PpaFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    /*new CompositeFeatureExtender[Feature, Value](Vector(
-      new NumberFeatureExtender(),
-      new LemmaFeatureExtender(),
-      new WordShapeFeatureExtender(),
-      new VNCombinationFeatureExtender(),
-      new CapitalizationFeatureExtender()))
-    .extendFeatures(features)
-    * 
-    */
-    new LemmaFeatureExtender[Feature, Value].extendFeatures(features)
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    (new CompositeFeatureExtender(Vector(
+      new AllTwoValueCombinationsFeatureExtender,
+      new LemmaFeatureExtender,
+      new NumberFeatureExtender,
+      new SpecialCharactersFeatureExtender,
+      new VNCombinationFeatureExtender,
+      new CapitalizationFeatureExtender))).extendFeatures(features)
   }
 
 }
 
-class NumberFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class NumberFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    ???
+  val NumRegex = """[0-9]+\.?[0-9]*""".r
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features.par.map {
+      case (feature, value) =>
+        value match {
+          case NumRegex() => Vector(("numeric", value), (feature, value))
+          case _          => Vector((feature, value))
+        }
+    }.seq.flatten
   }
 
 }
 
-class LemmaFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class SpecialCharactersFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    features.map { case (f, v) => (f, Lemmatize(v.toString)) }
-    ???
+  val SpecialCharRegex = """\$|\@|\%|\&|\*|\^|\~|\(|\)|\-|\_|\=|\+|\#""".r
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features.par.map {
+      case (feature, value) =>
+        value match {
+          case SpecialCharRegex() => Vector(("special_character", value), (feature, value))
+          case _                  => Vector((feature, value))
+        }
+    }.seq.flatten
   }
 
 }
 
-class WordShapeFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class LemmaFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    ???
+  val lemmatizables = Set("verb", "noun")
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features.par.map {
+      case (feature, value) =>
+        if (lemmatizables.contains(feature))
+          Vector((feature + "_lemma", Lemmatize(value)), (feature, value))
+        else
+          Vector((feature, value))
+    }.seq.flatten
   }
 
 }
 
-class VNCombinationFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class AllTwoValueCombinationsFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    ???
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    val newFeatures = for (x <- features.par; y <- features.par) yield (x._1 + y._1, x._2 + y._2)
+    features ++ newFeatures
   }
 
 }
 
-class CapitalizationFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class CapitalizationFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    ???
+  val CapitalsRegex = """[A-Z]+.*""".r
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features.par.map {
+      case (feature, value) =>
+        value match {
+          case CapitalsRegex() => Vector(("caps", value), (feature, value))
+          case _               => Vector((feature, value))
+        }
+    }.seq.flatten
   }
 
 }
 
-class SpecialCharacterFeatureExtender[Feature, Value] extends FeatureExtender[Feature, Value] {
+class VNCombinationFeatureExtender extends FeatureExtender[String, String] {
 
-  def extendFeatures(features: Vector[(Feature, Value)]): Vector[(Feature, Value)] = {
-    ???
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features ++ Vector(
+      ("verb+noun",
+        features.filter(x => x._1 == "verb").toMap.getOrElse("verb", "") +
+        "+" +
+        features.filter(x => x._1 == "noun").toMap.getOrElse("noun", "")))
   }
 
 }

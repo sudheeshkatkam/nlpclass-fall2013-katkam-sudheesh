@@ -69,24 +69,24 @@ object NaiveBayes {
     if (lambda > 0) {
       if (log) {
         if (extend)
-          return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender[String, String])
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender)
         else
           return new LogAddLambdaNaiveBayesTrainer[String, String, String](lambda, new NoOpFeatureExtender)
       } else {
         if (extend)
-          return new AddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender[String, String])
+          return new AddLambdaNaiveBayesTrainer[String, String, String](lambda, new PpaFeatureExtender)
         else
           return new AddLambdaNaiveBayesTrainer[String, String, String](lambda, new NoOpFeatureExtender)
       }
     } else {
       if (log) {
         if (extend)
-          return new LogAddLambdaNaiveBayesTrainer[String, String, String](0.0, new PpaFeatureExtender[String, String])
+          return new LogAddLambdaNaiveBayesTrainer[String, String, String](0.0, new PpaFeatureExtender)
         else
           return new LogAddLambdaNaiveBayesTrainer[String, String, String](0.0, new NoOpFeatureExtender)
       } else {
         if (extend)
-          return new UnsmoothedNaiveBayesTrainer[String, String, String](new PpaFeatureExtender[String, String])
+          return new UnsmoothedNaiveBayesTrainer[String, String, String](new PpaFeatureExtender)
         else
           return new UnsmoothedNaiveBayesTrainer[String, String, String](new NoOpFeatureExtender)
       }
