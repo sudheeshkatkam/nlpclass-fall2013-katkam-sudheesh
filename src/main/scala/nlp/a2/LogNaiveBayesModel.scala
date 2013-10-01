@@ -19,13 +19,22 @@ class LogNaiveBayesModel[Label, Feature, Value](
           (acc, z) =>
             acc + math.log(pValue(z._1)(z._2, x))
         })
-    }.toMap
-    val maximum = labelsMap.values.max
+    }.toVector.sortBy(-_._2)
+    
+    val maximum = labelsMap.map{_._2}.max
+    
     val predictions = labelsMap.map {
       case (label, prob) =>
         label -> (math.exp(prob) - maximum)
     }
-    predictions.maxBy(_._2)._1
+    
+    val total: Double = predictions.foldLeft(0.0) { (acc, lp) => acc + lp._2 }
+    
+    if (total != 0)
+      predictions(0)._1
+    else
+      labels.toVector.sortBy(pLabel(_)).toVector(0)
+    //predictions.maxBy(_._2)._1
   }
 
 }
