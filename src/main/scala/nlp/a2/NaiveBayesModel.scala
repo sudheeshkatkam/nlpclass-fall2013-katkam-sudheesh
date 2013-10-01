@@ -46,7 +46,7 @@ class NaiveBayesModel[Label, Feature, Value](
     if (total != 0)
       sortedLabels(0)._1
     else
-      labels.toVector.sortBy(-pLabel(_)).toVector(0)
+      labels.toVector.sortBy(pLabel(_)).toVector(0)
   }
 
   /*
