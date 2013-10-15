@@ -54,9 +54,9 @@ object NaiveBayes {
           argsList(argsList.indexOf("--extend") + 1).toBoolean
         else false
 
-      val nbt = trainer(lambda, log, extend)
-      val nbm = nbt.train(trainingInstances)
-      NaiveBayesScorer.score(nbm, testingInstances, positiveLabel)
+      val trainer = get_trainer(lambda, log, extend)
+      val model = trainer.train(trainingInstances)
+      NaiveBayesScorer.score(model, testingInstances, positiveLabel)
 
     } catch {
       case InvalidPosLabel  => println("Missing positive label.")
@@ -65,7 +65,7 @@ object NaiveBayes {
 
   }
 
-  def trainer(lambda: Double, log: Boolean, extend: Boolean): NaiveBayesTrainerToImplement[String, String, String] = {
+  def get_trainer(lambda: Double, log: Boolean, extend: Boolean): NaiveBayesTrainerToImplement[String, String, String] = {
     if (lambda > 0) {
       if (log) {
         if (extend)

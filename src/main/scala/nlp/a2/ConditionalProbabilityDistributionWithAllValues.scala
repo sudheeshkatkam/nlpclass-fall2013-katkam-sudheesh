@@ -37,9 +37,16 @@ class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2
     val fSum = frequencySumDistribution.getOrElse(given, 0)
     val freq = fDist.getOrElse(x, 0)
     logger.debug("P(" + x + " | " + given + "):" +
-      " numer: " + (freq + lambda) +
+      " numer: " + freq + " + " + lambda +
       " denom: " + fSum + " + " + (allSeconds.size * lambda))
-    (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+    given match {
+      case g: Vector[String] =>
+        if (!g.isEmpty && g.last == "<S>")
+          (freq + lambda).toDouble / (fSum + ((allSeconds.size - 1) * lambda))
+        else
+          (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+      case _ => (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+    }
   }
 
   def sample(given: A): B = {
