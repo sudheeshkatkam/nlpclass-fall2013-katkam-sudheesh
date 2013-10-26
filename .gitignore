@@ -16,3 +16,6 @@ project/plugins/project/
 .project
 .settings/
 .cache
+
+# other
+data/
