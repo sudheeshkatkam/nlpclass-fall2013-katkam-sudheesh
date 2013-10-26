@@ -45,6 +45,17 @@ class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2
           (freq + lambda).toDouble / (fSum + ((allSeconds.size - 1) * lambda))
         else
           (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+      case g: String =>
+        x match {
+          case w: String =>
+            if ((w == "<S>" && g == "<S>") || g == "<E>")
+              1.0
+            else if (g == "<S>")
+              (freq + lambda).toDouble / (fSum + ((allSeconds.size - 1) * lambda))
+            else
+              (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+          case _ => (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
+        }
       case _ => (freq + lambda).toDouble / (fSum + (allSeconds.size * lambda))
     }
   }

@@ -1,7 +1,0 @@
-word=loved,word=film,word=loved,word=actor,pos=loved,pos=loved,positive
-word=film,word=bad,word=plot,word=worst,neg=bad,neg=worst,negative
-word=worst,word=film,word=dumb,word=film,neg=worst,neg=dumb,negative
-word=car,word=chase,word=fight,word=scene,word=film,neutral
-word=great,word=plot,word=best,word=film,pos=great,pos=best,positive
-word=best,word=actor,word=bad,word=plot,pos=best,neg=bad,negative
-word=hated,word=terrible,word=film,neg=hated,neg=terrible,negative
