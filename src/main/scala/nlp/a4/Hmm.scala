@@ -29,6 +29,7 @@ object Hmm {
 
       val trainer = getTrainer(lambda)
       val model = trainer.train(trainingData)
+      
       ModelEvaluator[String, String](model, testingData)
     } catch {
       case MissingInstances => println("Missing test/train instances.")

@@ -24,7 +24,8 @@ object Viterbi extends Logging {
 
     //backward pass
     val path = backward(matrix)
-
+    
+    logger.info("VITERBI PATH:" + path)
     path
   }
 
@@ -42,7 +43,9 @@ object Viterbi extends Logging {
         state =>
           val prevNodes = matrix(i - 1)
           val prob = emissionProbs(observation, state)
+          
           logger.debug("P(" + observation + "|" + state + f"): ${prob}%.4f")
+          
           val best = score[S](state, prevNodes, transitionProbs)
           new Node[S](best._1, prob * best._2, state)
       }
@@ -50,11 +53,13 @@ object Viterbi extends Logging {
     }
 
     logger.debug("P(" + sequence.last + "|" + endState + f"): ${emissionProbs(sequence.last, endState)}%.4f")
+    
     val endScore = matrix(sequence.size - 2).map {
       prev =>
         logger.debug("\t Prev: " + prev +
           f" prob(${endState}|${prev.state}): ${transitionProbs(endState, prev.state)}%.4f" +
           f" score: ${prev.score * transitionProbs(endState, prev.state)}%.4f")
+        
         (prev, prev.score * transitionProbs(endState, prev.state))
     }.maxBy(_._2)
 
@@ -72,6 +77,7 @@ object Viterbi extends Logging {
         logger.debug("\t Prev: " + prev +
           f" prob(${state}|${prev.state}): ${transitionProbs(state, prev.state)}%.4f" +
           f" score: ${prev.score * transitionProbs(state, prev.state)}%.4f")
+        
         (prev, prev.score * transitionProbs(state, prev.state))
     }.maxBy(_._2)
 
@@ -84,10 +90,10 @@ object Viterbi extends Logging {
 
     val nodes = matrix.dropRight(1).foldLeft(Vector(end)) {
       (acc, vector) =>
-        acc :+ acc.last.prev
+        acc.head.prev +: acc
     }
 
-    nodes.map { node => node.state }.reverse
+    nodes.map { node => node.state }
   }
 
 }

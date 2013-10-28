@@ -8,8 +8,8 @@ object ModelEvaluator {
                        testSentences: Vector[Vector[(Word, Tag)]]) = {
     val labels = testSentences.map {
       sentence =>
-        val words = sentence.map(_._1)
-        val gold = sentence.map(_._2)
+        val words  = sentence.map(_._1)
+        val gold   = sentence.map(_._2)
         val output = model.tagSentence(words)
         output.zip(gold)
     }.flatten
@@ -20,12 +20,9 @@ object ModelEvaluator {
         (if (guess == actual) acc._1 + 1 else acc._1, acc._2 + 1)
     }
 
-    val filteredLabels = labels.filter {
-      case (guess, actual) =>
-        guess != actual
-    }
+    val filtered = labels.filter { case (guess, actual) => guess != actual }
 
-    val groupedLabels = filteredLabels.groupBy(_._1).map {
+    val grouped = filtered.groupBy(_._1).map {
       case (output, groupedByOutput) =>
         groupedByOutput.groupBy(_._2).map {
           case (actual, groupedByActual) =>
@@ -33,11 +30,11 @@ object ModelEvaluator {
         }
     }.flatten.toVector
 
-    val sortedLabels = groupedLabels.sortBy(-_._3).take(10)
+    val sorted = grouped.sortBy(-_._3).take(10)
 
     println(f"Accuracy: ${(accuracy._1.toDouble / accuracy._2) * 100}%.2f  (${accuracy._1}/${accuracy._2})")
     println("count  gold  model")
-    sortedLabels.map {
+    sorted.map {
       case (output, actual, size) =>
         println(f"${size}%5s${actual}%6s${output}%7s")
     }

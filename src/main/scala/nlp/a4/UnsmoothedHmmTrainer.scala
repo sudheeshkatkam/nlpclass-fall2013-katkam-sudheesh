@@ -31,6 +31,7 @@ class UnsmoothedHmmTrainer[Word, Tag](startWord: Word,
 
     val TWProbs = new ConditionalProbabilityDistribution[Tag, Word](TWPairs)
     val TTProbs = new ConditionalProbabilityDistribution[Tag, Tag](TTPairs)
+    
     logger.debug("TWProbs: " + TWProbs.distribution)
     logger.debug("TTProbs: " + TTProbs.distribution)
 
