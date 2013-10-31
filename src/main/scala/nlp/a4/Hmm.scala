@@ -54,4 +54,5 @@ object Hmm {
       new UnsmoothedHmmTrainer[String, String]("<S>", "<S>", "<E>", "<E>")
   }
   //val data = File("./data/ptbtag_train.txt").readLines.map { line => val pairs = line.split(" ").toVector; pairs.map { pair => val tuple = pair.splitAt(pair.indexOf("|")); (tuple._1, tuple._2.drop(1)) } }.toVector
+  
 }

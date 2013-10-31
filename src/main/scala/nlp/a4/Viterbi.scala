@@ -19,13 +19,13 @@ object Viterbi extends Logging {
     //forward pass
     val matrix = forward((states - startState - endState).toVector, startState, endState, sequence, emissionProbs, transitionProbs)
 
-    logger.info(matrix.map { x => ": " + x })
-    logger.info("matrix length: " + matrix.size)
+//    logger.info(matrix.map { x => ": " + x })
+//    logger.info("matrix length: " + matrix.size)
 
     //backward pass
     val path = backward(matrix)
-    
-    logger.info("VITERBI PATH:" + path)
+
+//    logger.info("VITERBI PATH:" + path)
     path
   }
 
@@ -35,37 +35,27 @@ object Viterbi extends Logging {
                             sequence: Vector[O],
                             emissionProbs: ConditionalProbabilityDistributionToImplement[S, O],
                             transitionProbs: ConditionalProbabilityDistributionToImplement[S, S]): Vector[Vector[Node[S]]] = {
-    var matrix: Vector[Vector[Node[S]]] = Vector(Vector.fill(1)(new Node[S](null, 1.0, startState)))
+    val matrix = sequence.drop(1).dropRight(1).scanLeft(Vector.fill(1)(new Node[S](null, 1.0, startState))) {
+      (acc, observation) =>
+        val scores = states.map {
+          state =>
+            val prevNodes = acc
+            val prob = emissionProbs(observation, state)
 
-    for (i <- 1 to (sequence.size - 2)) {
-      val observation = sequence(i)
-      val scores = states.map {
-        state =>
-          val prevNodes = matrix(i - 1)
-          val prob = emissionProbs(observation, state)
-          
-          logger.debug("P(" + observation + "|" + state + f"): ${prob}%.4f")
-          
-          val best = score[S](state, prevNodes, transitionProbs)
-          new Node[S](best._1, prob * best._2, state)
-      }
-      matrix = matrix :+ scores
+//            logger.debug("P(" + observation + "|" + state + f"): ${prob}%.4f")
+
+            val best = score[S](state, prevNodes, transitionProbs)
+            new Node[S](best._1, prob * best._2, state)
+        }
+        scores
     }
 
-    logger.debug("P(" + sequence.last + "|" + endState + f"): ${emissionProbs(sequence.last, endState)}%.4f")
-    
-    val endScore = matrix(sequence.size - 2).map {
-      prev =>
-        logger.debug("\t Prev: " + prev +
-          f" prob(${endState}|${prev.state}): ${transitionProbs(endState, prev.state)}%.4f" +
-          f" score: ${prev.score * transitionProbs(endState, prev.state)}%.4f")
-        
-        (prev, prev.score * transitionProbs(endState, prev.state))
-    }.maxBy(_._2)
+//    logger.debug("P(" + sequence.last + "|" + endState + f"): ${emissionProbs(sequence.last, endState)}%.4f")
 
-    logger.info("BEST PREVIOUS: " + endScore._1 + f" score: ${endScore._2}%.4f")
+    val endScore = score[S](endState, matrix(sequence.size - 2), transitionProbs)
+
+//    logger.info("BEST PREVIOUS: " + endScore._1 + f" score: ${endScore._2}%.4f")
     val end = new Node[S](endScore._1, emissionProbs(sequence.last, endState) * endScore._2, endState)
-
     matrix :+ Vector(end)
   }
 
@@ -74,14 +64,14 @@ object Viterbi extends Logging {
                        transitionProbs: ConditionalProbabilityDistributionToImplement[S, S]): (Node[S], Double) = {
     val best = prevNodes.map {
       prev =>
-        logger.debug("\t Prev: " + prev +
-          f" prob(${state}|${prev.state}): ${transitionProbs(state, prev.state)}%.4f" +
-          f" score: ${prev.score * transitionProbs(state, prev.state)}%.4f")
-        
+//        logger.debug("\t Prev: " + prev +
+//          f" prob(${state}|${prev.state}): ${transitionProbs(state, prev.state)}%.4f" +
+//          f" score: ${prev.score * transitionProbs(state, prev.state)}%.4f")
+
         (prev, prev.score * transitionProbs(state, prev.state))
     }.maxBy(_._2)
 
-    logger.info("BEST PREVIOUS: " + best._1 + f" score: ${best._2}%.4f")
+//    logger.info("BEST PREVIOUS: " + best._1 + f" score: ${best._2}%.4f")
     best
   }
 

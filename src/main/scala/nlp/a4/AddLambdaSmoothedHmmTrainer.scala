@@ -27,18 +27,18 @@ class AddLambdaSmoothedHmmTrainer[Word, Tag](startWord: Word,
         }
     }.flatten
 
-    val words = taggedSentences.flatten.map(_._1).toSet - endWord - startWord
-    val tags  = taggedSentences.flatten.map(_._2).toSet + endTag  - startTag
+    val words = TWPairs.map(_._2).toSet - endWord - startWord
+    val tags  = TWPairs.map(_._1).toSet + endTag  - startTag
 
-    logger.info("words: " + words)
-    logger.info("tags: "  + tags)
+    //logger.info("words: " + words)
+    //logger.info("tags: "  + tags)
 
     val TWProbs = new ConditionalProbabilityDistributionWithAllValues[Tag, Word](TWPairs, words, lambda)
     val TTProbs = new ConditionalProbabilityDistributionWithAllValues[Tag, Tag] (TTPairs, tags,  lambda)
 
-    logger.debug(TWProbs.distribution.map { case (tag, dist) => "TAG: " + tag + " DIST: " + dist })
-    logger.debug("TWProbs: " + TWProbs.distribution)
-    logger.debug("TTProbs: " + TTProbs.distribution)
+    //logger.debug(TWProbs.distribution.map { case (tag, dist) => "TAG: " + tag + " DIST: " + dist })
+    //logger.debug("TWProbs: " + TWProbs.distribution)
+    //logger.debug("TTProbs: " + TTProbs.distribution)
 
     new HiddenMarkovModel(tags, TWProbs, TTProbs, startWord, startTag, endWord, endTag)
   }

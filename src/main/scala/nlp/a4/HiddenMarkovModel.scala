@@ -17,8 +17,8 @@ class HiddenMarkovModel[Word, Tag](tags: Set[Tag],
     val emissions = pairs.map { case (tag, word) => TWProbs(tag, word) }
     val transitions = pairs.sliding(2).toVector.map { TTVector => TTProbs(TTVector(1)._2, TTVector(0)._2) }
     
-    logger.debug("emissions: "   + emissions)
-    logger.debug("transitions: " + transitions)
+    //logger.debug("emissions: "   + emissions)
+    //logger.debug("transitions: " + transitions)
 
     (transitions ++ emissions).foldLeft(0.0) { (acc, prob) => acc + math.log(prob) }
   }
