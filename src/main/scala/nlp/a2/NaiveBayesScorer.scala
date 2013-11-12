@@ -2,6 +2,7 @@ package nlp.a2
 
 import nlpclass.NaiveBayesScorerToImplement
 import nlpclass.NaiveBayesModelToImplement
+import nlpclass.Classifier
 
 object NaiveBayesScorer extends NaiveBayesScorerToImplement {
 
@@ -30,8 +31,4 @@ object NaiveBayesScorer extends NaiveBayesScorerToImplement {
   }
 
 }
-
-//val fp = predictions.groupBy(_._2).foldLeft(0){ (acc, groupedByPred) => 
-//  if(groupedByPred._1 != positiveLabel) acc + groupedByPred._2.size else acc + 0
-//}
     

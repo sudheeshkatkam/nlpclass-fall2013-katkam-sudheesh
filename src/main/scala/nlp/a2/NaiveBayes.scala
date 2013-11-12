@@ -56,7 +56,7 @@ object NaiveBayes {
 
       val trainer = get_trainer(lambda, log, extend)
       val model = trainer.train(trainingInstances)
-      NaiveBayesScorer.score(model, testingInstances, positiveLabel)
+      ClassifierScorer.score(model, testingInstances)
 
     } catch {
       case InvalidPosLabel  => println("Missing positive label.")

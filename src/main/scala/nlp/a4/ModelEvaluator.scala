@@ -1,10 +1,11 @@
 package nlp.a4
 
 import nlpclass.HiddenMarkovModelToImplement
+import nlpclass.Tagger
 
 object ModelEvaluator {
 
-  def apply[Word, Tag](model: HiddenMarkovModelToImplement[Word, Tag],
+  def apply[Word, Tag](model: Tagger[Word, Tag],
                        testSentences: Vector[Vector[(Word, Tag)]]) = {
     val labels = testSentences.map {
       sentence =>
@@ -41,12 +42,5 @@ object ModelEvaluator {
   }
 
 }
-
-//val accuracy = testSentences.foldLeft((0,0)){
-//  (acc, sentence) =>
-//    val words = sentence.map(_._1)
-//    val gold = sentence.map(_._2)
-//    val output = model.tagSentence(words)
-//    val count = output.zip(gold).count { case (guess, actual) => guess == actual }
 //    (acc._1 + count, acc._2 + gold.size)
 //}
