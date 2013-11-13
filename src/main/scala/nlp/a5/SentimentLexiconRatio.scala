@@ -14,17 +14,17 @@ object SentimentLexiconRatio {
 
       val posWords =
         if (argsList.indexOf("--pos") != -1)
-          fileTokens(argsList(argsList.indexOf("--pos") + 1))
+          wordSet(argsList(argsList.indexOf("--pos") + 1))
         else throw MissingInstances
 
       val negWords =
         if (argsList.indexOf("--neg") != -1)
-          fileTokens(argsList(argsList.indexOf("--neg") + 1))
+          wordSet(argsList(argsList.indexOf("--neg") + 1))
         else throw MissingInstances
 
       val testData =
         if (argsList.indexOf("--test") != -1)
-          testFileTokens(argsList(argsList.indexOf("--test") + 1))
+          fileTokens(argsList(argsList.indexOf("--test") + 1))
         else throw MissingInstances
 
       ClassifierScorer.score(new LexiconRatioSentimentClassifier(posWords, negWords), testData)
@@ -33,15 +33,15 @@ object SentimentLexiconRatio {
     }
   }
 
-  private def fileTokens(filename: String) = {
+  private def wordSet(filename: String) = {
     File(filename).readLines.filterNot(line => line.startsWith(";") || line.isEmpty).toSet
   }
 
-  private def wordSet(filename: String) = {
-    File(filename).readLines.map(_.trim).dropWhile(_.startsWith(";")).filter(_.nonEmpty).toSet
-  }
+//  private def wordSet(filename: String) = {
+//    File(filename).readLines.map(_.trim).dropWhile(_.startsWith(";")).filter(_.nonEmpty).toSet
+//  }
 
-  private def testFileTokens(filename: String) = {
+  private def fileTokens(filename: String) = {
     File(filename).readLines.map {
       line =>
         val featurePairs :+ label = line.split(",").toVector
@@ -52,4 +52,5 @@ object SentimentLexiconRatio {
         }
     }.toVector
   }
+  
 }

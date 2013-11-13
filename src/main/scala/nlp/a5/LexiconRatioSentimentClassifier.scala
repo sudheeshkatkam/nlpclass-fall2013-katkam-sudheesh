@@ -7,16 +7,16 @@ class LexiconRatioSentimentClassifier(posWords: Set[String], negWords: Set[Strin
   extends Classifier[String, String, String] with Logging {
 
   def predict(features: Vector[(String, String)]): String = {
-    val numPWords = features.count { case (f, v) => posWords.contains(v) }
-    val numNWords = features.count { case (f, v) => negWords.contains(v) }
+    val numPosWords = features.count { case (f, v) => posWords.contains(v) }
+    val numNegWords = features.count { case (f, v) => negWords.contains(v) }
 
     logger.debug("features: " + features +
-      "\n# Positive Words: " + numPWords +
-      "\n# Negative Words: " + numNWords)
+      "\n# Positive Words: " + numPosWords +
+      "\n# Negative Words: " + numNegWords)
 
-    if (numPWords > numNWords)
+    if (numPosWords > numNegWords)
       "positive"
-    else if (numPWords < numNWords)
+    else if (numPosWords < numNegWords)
       "negative"
     else
       "neutral"
