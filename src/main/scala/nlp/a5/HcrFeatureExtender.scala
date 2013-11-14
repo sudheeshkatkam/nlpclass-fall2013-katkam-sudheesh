@@ -8,17 +8,39 @@ class HcrFeatureExtender(posWords: Set[String] = Set[String](),
                          stopWords: Set[String] = Set[String]()) extends FeatureExtender[String, String] {
 
   def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
-    (new CompositeFeatureExtender(
+    val newFeatures = (new CompositeFeatureExtender(
       Vector(
         new LowerCaseFeatureExtender,
+        new WordBasedFeatureExtender,
+        new StopWordFeatureExtender(stopWords),
+        new HashTagBasedFeatureExtender,
         new PolarityLexiconFeatureExtender(posWords, negWords),
         new PartyBasedFeatureExtender,
         new TargetBasedFeatureExtender,
         new QuestionFeatureExtender,
         new AllCapsFeatureExtender,
-        new StopWordFeatureExtender(stopWords),
+        new NameFeatureExtender,
+        //new AllHashTagValueCombinationsFeatureExtender,
         new AllTargetValueCombinationsFeatureExtender,
         new AllUsernameValueCombinationsFeatureExtender))).extendFeatures(features)
+    //println(newFeatures)
+    //System.exit(0);
+    newFeatures
+  }
+
+}
+
+class WordBasedFeatureExtender extends FeatureExtender[String, String] {
+
+  val WordRegex = """[a-zA-Z]+""".r
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    features.map {
+      case (feature, value) =>
+        value match {
+          case WordRegex() => Vector(("word", value), (feature, value))
+          case _           => Vector(("non-word", value), (feature, value))
+        }
+    }.flatten
   }
 
 }
@@ -27,6 +49,17 @@ class LowerCaseFeatureExtender extends FeatureExtender[String, String] {
 
   def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
     val newFeatures = features.map { case (feature, value) => (feature, value.toLowerCase) }
+
+    features ++ newFeatures
+  }
+
+}
+
+class NameFeatureExtender extends FeatureExtender[String, String] {
+
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    val newFeatures =
+      Marker(features.filter { case (feature, value) => value.startsWith("@") }, "RT")
 
     features ++ newFeatures
   }
@@ -101,12 +134,40 @@ class TargetBasedFeatureExtender extends FeatureExtender[String, String] {
 
 }
 
+class HashTagBasedFeatureExtender extends FeatureExtender[String, String] {
+
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    val newFeatures =
+      Marker(features.filter { case (feature, value) => value.startsWith("#") }, "hashtag") ++
+        Marker(features.filter { case (feature, value) => !value.startsWith("#") && feature == "word" }, "non-hashtag")
+
+    features ++ newFeatures
+  }
+
+}
+
+class AllHashTagValueCombinationsFeatureExtender extends FeatureExtender[String, String] {
+
+  def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
+    val hashTagPairs =
+      features.filter { case (feature, value) => feature == "hashtag" }
+    val nonHashTagPairs =
+      features.filter { case (feature, value) => feature == "non-hashtag" }
+    val newFeatures =
+      for (y <- hashTagPairs; x <- nonHashTagPairs) yield ("HW", y._2 + x._2)
+
+    features ++ newFeatures
+  }
+
+}
+
 class AllTargetValueCombinationsFeatureExtender extends FeatureExtender[String, String] {
 
   def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
     val target +: tokens = features
-    val newFeatures = for (y <- tokens) yield (target._1 + y._1, target._2 + y._2)
-
+    //val newFeatures = for (y <- tokens) yield (target._1 + y._1, target._2 + y._2)
+    val newFeatures =
+      tokens.filter { case (feature, value) => feature == "word" || feature == "non-word" }.map { case (feature, value) => (target._1 + feature, target._2 + value) }
     features ++ newFeatures
   }
 
@@ -116,8 +177,10 @@ class AllUsernameValueCombinationsFeatureExtender extends FeatureExtender[String
 
   def extendFeatures(features: Vector[(String, String)]): Vector[(String, String)] = {
     val target +: userName +: tokens = features
-    val newFeatures = for (y <- tokens) yield (userName._1 + y._1, userName._2 + y._2)
+    //val newFeatures = for (y <- tokens) yield (userName._1 + y._1, userName._2 + y._2)
 
+    val newFeatures =
+      tokens.filter { case (feature, value) => feature == "word" || feature == "non-word" }.map { case (feature, value) => (userName._1 + feature, userName._2 + value) }
     features ++ newFeatures
   }
 
