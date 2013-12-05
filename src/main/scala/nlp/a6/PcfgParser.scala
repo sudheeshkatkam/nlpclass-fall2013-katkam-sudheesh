@@ -4,6 +4,7 @@ import nlpclass.Parser
 import nlpclass.Tree
 import nlp.a1.ConditionalProbabilityDistribution
 import nlp.a1.ProbabilityDistribution
+import nlpclass.TreeNode
 
 class PcfgParser(nonTerminals: Set[String],
                  prodProbDist: ConditionalProbabilityDistribution[String, Vector[Tree]],
@@ -25,6 +26,23 @@ class PcfgParser(nonTerminals: Set[String],
     }
   }
 
-  def generate(): Tree = ???
+  def generate(): Tree = {
+    val root = rootProbDist.sample
+    val production = prodProbDist.sample(root)
+    val children = sample(production)
+    val tree = TreeNode(root, children)
+    Cnf.undo(tree)
+  }
 
+  private def sample(production: Vector[Tree]): Vector[Tree] = {
+    val NTChildren = production.filter { child => nonTerminals.contains(child.label) }
+    if (NTChildren.length == 0)
+      return production
+    else {
+      NTChildren.map { child =>
+        val prod = prodProbDist.sample(child.label)
+        TreeNode(child.label, sample(prod))
+      }
+    }
+  }
 }
