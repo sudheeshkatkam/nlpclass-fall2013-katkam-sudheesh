@@ -22,4 +22,18 @@ object TreeUtilities {
 
   }
 
+  def allPosTrees(t: Tree): Vector[Tree] = {
+    if (t.isPos)
+      return Vector(t)
+
+    if (t.children.length == 2) {
+      val leftSubTrees = allPosTrees(t.children.head)
+      val rightSubTrees = allPosTrees(t.children.last)
+      return leftSubTrees ++ rightSubTrees
+    } else {
+      val subTrees = allPosTrees(t.children.last)
+      return subTrees
+    }
+
+  }
 }

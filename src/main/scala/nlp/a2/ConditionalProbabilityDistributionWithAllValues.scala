@@ -3,8 +3,9 @@ package nlp.a2
 import nlpclass.ConditionalProbabilityDistributionToImplement
 import com.typesafe.scalalogging.log4j.Logging
 import scala.util.Random
+import nlpclass.Tree
 
-class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2[A, B]], allSeconds: Set[B], lambda: Double)
+class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2[A, B]], allSeconds: Set[B], lambda: Double, N: Int = 0)
   extends ConditionalProbabilityDistributionToImplement[A, B] with Logging {
 
   object InvalidGiven extends Exception {}
@@ -40,6 +41,8 @@ class ConditionalProbabilityDistributionWithAllValues[A, B](pairs: Vector[Tuple2
       " numer: " + freq + " + " + lambda +
       " denom: " + fSum + " + " + (allSeconds.size * lambda))
     given match {
+      case g: Vector[Tree] =>
+        (freq + lambda).toDouble / (fSum + ((N + (N * N)) * lambda))
       case g: Vector[String] =>
         if (!g.isEmpty && g.last == "<S>")
           (freq + lambda).toDouble / (fSum + ((allSeconds.size - 1) * lambda))
