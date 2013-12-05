@@ -19,9 +19,10 @@ class UnsmoothedPcfgParserTrainer extends ParserTrainer {
     }.flatten
 
     val prodData = subTrees.map { tree => (tree.label, tree.children) }
+    val nonTerminals = prodData.map { case (label, children) => label }.toSet
     val prodProbDist = new ConditionalProbabilityDistribution(prodData)
 
-    return new PcfgParser(prodProbDist, rootProbDist)
+    new PcfgParser(nonTerminals, prodProbDist, rootProbDist)
   }
 
 }

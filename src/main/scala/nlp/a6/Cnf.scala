@@ -29,7 +29,7 @@ object Cnf {
   }
 
   def undo(t: Tree): Tree = {
-    if (t.isPos)
+    if (t.isLeaf || t.isPos)
       return t
 
     if (t.children.head.isPos && t.children.last.isPos)
@@ -41,9 +41,9 @@ object Cnf {
     val rightTree = undo(rightChild)
 
     if (rightChild.label.contains("{"))
-      return TreeNode(t.label, leftTree +: rightTree.children)
+      TreeNode(t.label, leftTree +: rightTree.children)
     else
-      return TreeNode(t.label, Vector(leftTree, rightTree))
+      TreeNode(t.label, Vector(leftTree, rightTree))
   }
 
 }
